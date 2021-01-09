@@ -1,0 +1,62 @@
+#vote {
+  width: 800px;
+}
+
+#info-block {
+  background-color: #DBFFCD;
+  background-image: linear-gradient(90deg, #DBFFCD, #86DDD7, #92E4F5);
+  padding: 40px;
+  padding-top: 100px;
+}
+#info-block .resource-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+#info-block .resource-list .resource-badge {
+  cursor: pointer;
+  color: black;
+  padding: 0px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: 0.1s;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+#info-block .resource-list .resource-badge:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+#vote-block {
+  margin: 40px 0px;
+}
+
+.card {
+  background: white;
+  margin-bottom: 15px;
+  box-shadow: 0px 6px 30px -4px rgba(0, 0, 0, 0.15);
+}
+.card .content {
+  padding: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.card .voting-btns {
+  display: flex;
+}
+.card .voting-btns .btn {
+  cursor: pointer;
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+.card .voting-btns .btn:not(:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.card .voting-btns .btn:hover {
+  background: #86DDD7;
+}
+.card .voting-btns .active {
+  background: #86DDD7;
+}
+
+/*# sourceMappingURL=Vote.css.map */
