@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, \
 url_for, flash, make_response, session
+import json
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'super secret'
@@ -18,6 +19,10 @@ def visits():
         session['visits'] = 1
     return {'Visits': session.get('visits')}
 
+@app.route('/button-data/', methods=["POST"])
+def parse_data():
+    request_data = json.loads(request.data)
+    print(request_data["content"])
 
 if __name__ == '__main__':
     app.run()
