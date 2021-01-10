@@ -69,7 +69,10 @@ function Vote() {
         </div>
 
         <div id="vote-block">
-            <h2>Vote on Suggestions</h2>
+            <div className="header">
+                <h2>Vote on Suggestions</h2>
+                <div className="divider"/>
+            </div>
             {cards.map(card =>
                 <Card content={card}/>
             )}

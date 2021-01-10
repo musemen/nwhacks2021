@@ -21,7 +21,7 @@ function App() {
             </div>
 
             <Route exact path="/" render={() => <Home/>}/>
-            <Route exact path="/vote" render={() => <Vote/>}/>
+            <Route path="/vote/:qid" render={({ match }) => <Vote qid={match.params.qid}/>}/>
             <Route exact path="/results" render={() => <Results/>}/>
             <Route exact path="/create-question" render={() => <CreateQuestion/>}/>
         </Router>
