@@ -37,7 +37,7 @@ function Home() {
   return (
     <div id="home">
         <div className="site-description">
-            <img src="https://images.unsplash.com/photo-1485282451181-373ce0a1f879?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1951&q=80"/>
+            <img src="https://images.unsplash.com/photo-1485282451181-373ce0a1f879?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1951&q=80" alt="cover"/>
             <p>Political polarization is a massive issue. Here is a site where we identify our ideological differences and see where and how we can reach consensus.</p>
             <p>Contribute to any of the topics below to help find solutions for important issues in society.</p>
         </div>
