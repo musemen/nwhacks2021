@@ -17,11 +17,14 @@ class Question(db.Model):
     Background = db.Column(db.String(200), nullable=False)
     Resources = db.Column(db.String(60), nullable=False)
     prompts = db.Column(db.String(60), nullable=False)
+    # Import prompts from the function below...
 
     def __repr__(self):
         return f"Question('{self.Question}','{self.Background}')"
 
-
+class Prompts(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    prompts = db.Column(db.String(60), nullable=False)
 
 @app.route('/')
 def hello_world():
