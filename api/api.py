@@ -2,11 +2,14 @@ from flask import Flask, render_template, request, redirect, \
 url_for, flash, make_response, session
 import json
 from flask_sqlalchemy import SQLAlchemy
+from flask_cors import CORS
+
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'super secret'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 db = SQLAlchemy(app)
+CORS(app)
 
 class Question(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -17,6 +20,8 @@ class Question(db.Model):
 
     def __repr__(self):
         return f"Question('{self.Question}','{self.Background}')"
+
+
 
 @app.route('/')
 def hello_world():
@@ -37,10 +42,11 @@ def parse_data():
     request_data = json.loads(request.data)
     print(request_data["content"])
 
-# @app.route('/add-prompt/', methods=["POST"])
-# def parse_data():
-#     request_data = json.loads(request.data)
-#     print(request_data["content"])
+@app.route('/add-Question/', methods=["POST"])
+def parse_question():
+    request_data = json.loads(request.data)
+    print(request_data["content"])
+    #make new question obkect and comit to db
 
 # @app.route('/get-prompt/', methods=["GET"])
 # def parse_data():
