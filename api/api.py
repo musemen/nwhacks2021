@@ -16,7 +16,7 @@ def visits():
     else:
         # Setting session data
         session['visits'] = 1
-    return "Total visits: {}".format(session.get('visits'))
+    return {'Visits': session.get('visits')}
 
 
 if __name__ == '__main__':
