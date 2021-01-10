@@ -1,0 +1,22 @@
+#home {
+  width: 800px;
+  padding: 40px;
+  padding-top: 100px;
+}
+#home a {
+  color: black;
+  text-decoration: none;
+}
+#home .card {
+  padding: 20px 30px;
+  transition: 0.1s;
+}
+#home .card h1 {
+  font-size: 24px;
+}
+#home .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.1);
+}
+
+/*# sourceMappingURL=Home.css.map */
