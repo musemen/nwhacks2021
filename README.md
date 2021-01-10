@@ -1,3 +1,8 @@
+# nwHacks 2021 
+### Song You, Celena Gong, Musa Mohannad, Samuel Kahessay 
+
+devpost link: [insert here]
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
